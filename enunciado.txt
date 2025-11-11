@@ -87,3 +87,8 @@ Evaluación detallada
 5. Extra: 1 punto
     • Interfaz cuidada y agradable
     • Uso de una API externa en alguna de las visualizaciones (opcional)
+
+
+aclaraciones:
+solo debemos realizar la parte 1
+el trabajo sera sobre un restaurante generico
