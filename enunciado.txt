@@ -1,0 +1,89 @@
+Práctica 1 – Aplicaciones web
+
+El objetivo de esta práctica es que el estudiante desarrolle un proyecto completo
+combinando front-end y back-end, aplicando los conocimientos de HTML, CSS,
+JavaScript, PHP y bases de datos. El proyecto se divide en dos partes
+complementarias.
+
+Parte 1: Sitio Web Temático (Front-End)
+
+Descripción
+Diseñar un sitio web sobre un tema de su elección, aplicando principios de estructura,
+estilo y diseño responsive.
+
+Temas posibles
+    • Restaurante o cafetería
+    • Tienda de productos o comercio local
+    • Gimnasio / Blog de nutrición
+    • Página con artículos o publicaciones
+    • Portfolio personal o CV
+    • Otro tema aprobado por el profesor    
+
+Requisitos técnicos
+    • Lenguajes: HTML y CSS (JavaScript opcional).
+    • Estructura: mínimo 2 páginas (por ejemplo: Inicio, Contacto, Productos, Artículos, etc.).
+    • Contenido: redactado y maquetado por el estudiante, sin copiar plantillas.
+    • Diseño:
+        o Uso de etiquetas semánticas (header, nav, main, section, footer).
+        o Estilos personalizados con CSS (colores, tipografía, espaciado, bordes, etc.).
+        o Diseño responsive con media queries, Flexbox o Grid.
+    • Elementos recomendados:
+        o Menú de navegación funcional.
+        o Imágenes o iconos relevantes.
+        o Pequeños gráficos o estadísticas opcionales.
+
+
+Parte 2: Panel de Datos
+
+Descripción
+Crear un panel de datos (Data Dashboard) que obtenga datos de una base de datos y
+los presente mediante gráficos o tablas. La idea es practicar la integración front-end /
+back-end y la visualización de datos.
+
+Tecnologías recomendadas
+El panel se puede desarrollar utilizando las siguientes tecnologías:
+    • Bootstrap: para diseñar y estructurar el front-end, asegurando una interfaz responsiva y moderna.
+    • JavaScript y Jquery: para la manipulación del DOM y el comportamiento dinámico de la página. jQuery puede ser útil para simplificar tareas como el manejo de eventos y la manipulación de estilos.
+    • Fetch API o Ajax de Jquery: para obtener datos de manera asíncrona desde el servidor Apache (XAMPP) y actualizar el contenido de la web con la información recibida de la base de datos en tiempo real, sin recargar la página.
+    • Highcharts y Highmaps: para crear visualizaciones gráficas e interactivas de los datos en el dashboard.
+    • XAMPP y PHP: para configurar el servidor web y gestionar las consultas a la base de datos en el back-end.
+
+Requisitos mínimos del dashboard
+    • Al menos tres visualizaciones.
+    • Opcional: extraer datos de una API para alguna visualización.
+
+Entrega
+    • Carpeta del proyecto en .zip o .rar.
+    • Base de datos exportada en .sql (Parte 2).
+    • Video de 5 a 10 minutos mostrando el funcionamiento y cómo está hecho.
+    • Documento ReadMe con:
+        o Descripción del tema.
+        o Tecnologías utilizadas.
+        o Estructura del proyecto 
+        o Etc.
+
+Criterios de Evaluación
+Se evaluará los siguientes aspectos:
+    • Funcionalidad de la aplicación
+    • Accesibilidad
+    • Documentación (un ReadMe es suficiente)
+    • Código limpio
+
+Evaluación detallada
+1. Funcionalidad de la aplicación: 5 puntos
+    • La aplicación funciona correctamente y se muestra en el vídeo.
+    • Incluye la parte front-end: mínimo 2 páginas con HTML semántico y diseño responsive.
+    • Incluye la parte backend: dashboard con mínimo 3 visualizaciones.
+    • El vídeo debe mostrar claramente la separación entre frontend y backend y cómo se visualizan las gráficas.
+2. Accesibilidad: 2 puntos
+    • HTML semántico en el front-end, títulos claros y descriptivos
+    • Gráficas accesibles utilizando el módulo de accesibilidad de Highcharts (https://www.highcharts.com/docs/accessibility/accessibility-module)
+3. Documentación: 1 punto
+    • ReadMe completo: descripción del proyecto, instrucciones de ejecución, estructura del código y base de datos
+4. Código limpio: 1 punto
+    • Nombres de variables descriptivos
+    • Indentación correcta
+    • Buena organización de los archivos
+5. Extra: 1 punto
+    • Interfaz cuidada y agradable
+    • Uso de una API externa en alguna de las visualizaciones (opcional)
