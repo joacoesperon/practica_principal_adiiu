@@ -151,6 +151,12 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     overflow: hidden; /* Para que el border-radius afecte a la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.especialidades .plato:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta ligeramente */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15); /* Sombra más pronunciada */
 }
 
 .especialidades .plato img {
