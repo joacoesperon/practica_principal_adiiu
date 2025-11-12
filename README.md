@@ -23,7 +23,7 @@ El proyecto se organiza de la siguiente manera:
 /
 ├── index.html         // Página de Inicio
 ├── menu.html          // Página con el menú del restaurante
-├── contacto.html      // Página de contacto
+├── dashboard.html     // Página del panel de datos
 ├── css/
 │   └── style.css      // Hoja de estilos principal (incluye estilos responsivos)
 └── README.md          // Este archivo
@@ -31,6 +31,6 @@ El proyecto se organiza de la siguiente manera:
 
 *   **`index.html`**: La página principal que presenta el restaurante.
 *   **`menu.html`**: Muestra el menú completo, dividido en categorías.
-*   **`contacto.html`**: Contiene la información de contacto, un formulario y un mapa de ubicación.
+*   **`dashboard.html`**: Contiene el panel de datos del restaurante.
 *   **`css/style.css`**: Archivo único de estilos que define la apariencia de todo el sitio, incluyendo las reglas para adaptarse a diferentes tamaños de pantalla (diseño responsivo).
 

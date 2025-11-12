@@ -84,6 +84,12 @@ header nav a:hover {
     color: var(--color-texto);
 }
 
+header nav a[aria-current="page"] {
+    color: var(--color-texto);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 /* --- Main Content --- */
 main {
     padding: 2rem 0;
@@ -166,12 +172,12 @@ section {
     display: block;
 }
 
-.especialidades .plato h4 {
+.especialidades .plato figcaption h4 {
     font-size: 1.5rem;
     margin: 1rem 1rem 0.5rem 1rem;
 }
 
-.especialidades .plato p {
+.especialidades .plato figcaption p {
     padding: 0 1rem 1rem 1rem;
 }
 
@@ -220,9 +226,10 @@ footer {
     gap: 2rem;
 }
 
-.menu-item {
+.menu-item dt {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .menu-item h4 {
@@ -230,9 +237,9 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.menu-item p {
-    flex-grow: 1; /* Para que la descripción ocupe el espacio disponible */
+.menu-item dd {
     margin-bottom: 0.5rem;
+    margin-left: 0; /* Reset browser default */
 }
 
 .menu-item .precio {
@@ -240,72 +247,33 @@ footer {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--color-texto);
-    align-self: flex-end;
+    white-space: nowrap; /* Evita que el precio se parta */
+    margin-left: 1rem;
 }
 
-/* --- Página de Contacto --- */
-.contacto-contenido {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
-}
-
-.mapa {
-    border: 5px solid #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    border-radius: 5px;
-    overflow: hidden; /* Para que el borde redondeado afecte al iframe */
-}
-
-.info-y-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    background-color: #fff;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.info-contacto h3, .formulario-contacto h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.info-contacto p {
-    margin-bottom: 0.8rem;
-}
-
-.form-grupo {
-    margin-bottom: 1rem;
-}
-
-.form-grupo label {
-    display: block;
-    margin-bottom: 0.3rem;
+/* --- Footer Info --- */
+address.footer-info {
+    font-style: normal; /* Reset browser default for address tag */
     font-weight: 600;
+    line-height: 1.8;
 }
 
-.form-grupo input,
-.form-grupo textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+.tel {
+    color: var(--color-primario); /* Make phone number stand out */
+    font-weight: 700;
+    text-decoration: none;
 }
 
-.form-grupo input:focus,
-.form-grupo textarea:focus {
-    outline: none;
-    border-color: var(--color-primario);
+.tel:hover {
+    text-decoration: underline;
 }
 
-.formulario-contacto .btn {
-    width: 100%;
-    text-align: center;
+footer p {
+    margin-top: 1rem;
+}
+
+.address-text {
+    font-style: italic;
 }
 
 /* --- Responsive Design (Media Queries) --- */
@@ -322,10 +290,6 @@ footer {
     }
 
     .menu-items {
-        grid-template-columns: 1fr;
-    }
-
-    .info-y-form {
         grid-template-columns: 1fr;
     }
 
@@ -367,8 +331,7 @@ footer {
     }
 
     .especialidades .plato,
-    .menu-categoria,
-    .info-y-form {
+    .menu-categoria {
         padding: 1.5rem;
     }
 }

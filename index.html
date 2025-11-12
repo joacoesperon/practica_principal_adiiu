@@ -12,9 +12,9 @@
             <h1 class="logo">El Antojo</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,21 +33,27 @@
             <div class="container">
                 <h3>Nuestras Especialidades</h3>
                 <div class="platos">
-                    <div class="plato">
+                    <figure class="plato">
                         <img src="images/cocido.jpg" alt="Plato de Cocido Madrileño">
-                        <h4>Cocido Madrileño</h4>
-                        <p>Nuestro famoso cocido a tres vuelcos, servido como manda la tradición.</p>
-                    </div>
-                    <div class="plato">
+                        <figcaption>
+                            <h4>Cocido Madrileño</h4>
+                            <p>Nuestro famoso cocido a tres vuelcos, servido como manda la tradición.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="plato">
                         <img src="images/callos.jpg" alt="Plato de Callos a la Madrileña">
-                        <h4>Callos a la Madrileña</h4>
-                        <p>Una receta familiar que ha pasado de generación en generación. ¡Pura potencia!</p>
-                    </div>
-                    <div class="plato">
+                        <figcaption>
+                            <h4>Callos a la Madrileña</h4>
+                            <p>Una receta familiar que ha pasado de generación en generación. ¡Pura potencia!</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="plato">
                         <img src="images/besugo.jpg" alt="Plato de Besugo a la Madrileña">
-                        <h4>Besugo a la Madrileña</h4>
-                        <p>Fresco y horneado con maestría, un clásico de las celebraciones.</p>
-                    </div>
+                        <figcaption>
+                            <h4>Besugo a la Madrileña</h4>
+                            <p>Fresco y horneado con maestría, un clásico de las celebraciones.</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -62,9 +68,11 @@
 
     <footer>
         <div class="container">
-            <p>Calle de la Cava Baja, 17, 28005 Madrid</p>
-            <p>Teléfono: 913 66 50 87</p>
-            <p>&copy; 2025 El Antojo. Todos los derechos reservados.</p>
+            <address class="footer-info">
+                <span class="address-text">Calle de la Cava Baja, 17, 28005 Madrid</span><br>
+                Teléfono: <a class="tel" href="tel:+34913665087">913 66 50 87</a>
+            </address>
+            <p><small>&copy; 2025 El Antojo. Todos los derechos reservados.</small></p>
         </div>
     </footer>
 </body>
